@@ -56,14 +56,14 @@ class MainActivity : AppCompatActivity() {
                     val device = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
                     if (device?.address == targetDevice?.address) {
                         updateConnectionStatus(true)
-                        Log.d(TAG, "Device connected: ${device.name}")
+                        Log.d(TAG, "Device connected: ${device?.name ?: "Unknown"}")
                     }
                 }
                 BluetoothDevice.ACTION_ACL_DISCONNECTED -> {
                     val device = intent.getParcelableExtra<BluetoothDevice>(BluetoothDevice.EXTRA_DEVICE)
                     if (device?.address == targetDevice?.address) {
                         updateConnectionStatus(false)
-                        Log.d(TAG, "Device disconnected: ${device.name}")
+                        Log.d(TAG, "Device disconnected: ${device?.name ?: "Unknown"}")
                         // Auto-reconnect
                         attemptReconnection()
                     }

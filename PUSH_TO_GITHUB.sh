@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Replace YOUR_REPO_URL with the actual GitHub repository URL"
+echo "Example: https://github.com/dwertz123/media-mate.git"
+echo ""
+echo "Then run these commands:"
+echo ""
+echo "cd /home/davew/claude/mobile_mate_app"
+echo "git remote add origin YOUR_REPO_URL"
+echo "git push -u origin main"
+echo ""
+echo "GitHub Actions will automatically build the APK!"

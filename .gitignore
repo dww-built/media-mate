@@ -7,7 +7,6 @@ bin/
 gen/
 out/
 build/
-gradle/
 .gradle/
 
 # Local configuration file (SDK path, etc)
@@ -31,8 +30,6 @@ Thumbs.db
 
 # Gradle files
 .gradle/
-gradlew
-gradlew.bat
 
 # Temporary files
 *.tmp
